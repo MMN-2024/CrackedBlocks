@@ -2,3 +2,4 @@
 /target/
 # Ignore .idea files
 .idea/
+.env
