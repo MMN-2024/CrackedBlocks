@@ -26,6 +26,7 @@ public class EntityExplodeListener implements Listener {
             if (e.getEntityType() == EntityType.ENDER_DRAGON) return;
             // Ignore wind charge explosions to prevent durability reduction
             if (e.getEntityType() == EntityType.WIND_CHARGE) return;
+            if (e.getEntityType() == EntityType.BREEZE_WIND_CHARGE) return;
             e.blockList().removeIf(block -> data.getBlocks().contains(block.getType()));
             Location location = e.getLocation();
             World world = location.getWorld();
